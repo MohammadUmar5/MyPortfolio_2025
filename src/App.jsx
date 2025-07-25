@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { SocialIcon } from "react-social-icons";
 import "./App.css";
 
 function App() {
@@ -37,17 +37,16 @@ function App() {
       <div className="pt-24">
         {" "}
         {/* Added padding-top to account for fixed navbar */}
-        <div className="flex items-center justify-between px-8 lg:px-16 py-12 h-150 max-w-7xl">
+        <div className="border border-white flex items-center justify-between px-8 lg:px-16 py-12 h-full max-w-7xl">
           {/* Left Side - Text */}
-          <div className=" ml-1 mt-[-280px]">
+          <div className=" ml-1 mt-[-280px] z-30">
             <h1
-              className="text-4xl text-white lg:text-6xl font-bold leading-none"
-              style={{ fontFamily: "Inter, sans-serif" }}
+              className="text-4xl text-white lg:text-7xl font-bold leading-none"
+              style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
             >
               Hello I am Umar, a
               <br />
               <span className="bg-gradient-to-r from-pink-500 via-yellow-500 to-blue-500 bg-clip-text text-transparent">
-                {" "}
                 backend developer
               </span>
             </h1>
@@ -55,14 +54,40 @@ function App() {
               Building scalable APIs, managing cloud infrastructure &
               architecting backend systems.
             </h3>
+            <div className="">
+              <SocialIcon
+                url="https://github.com/MohammadUmar5 "
+                bgColor="transparent"
+                className="mr-4"
+                style={{ height: "100px", width: "100px" }}
+              />
+              <SocialIcon
+                url="https://linkedin.com/in/yourusername"
+                bgColor="transparent"
+                className="mr-4"
+                style={{ height: "100px", width: "100px" }}
+              />
+              <SocialIcon
+                url="https://x.com/MohdUmar887"
+                bgColor="transparent"
+                className="mr-4"
+                style={{ height: "100px", width: "100px" }}
+              />
+              <SocialIcon
+                url="mailto:yourname@example.com"
+                bgColor="transparent"
+                className="mr-4"
+                style={{ height: "100px", width: "100px" }}
+              />
+            </div>
           </div>
 
           {/* Right Side - Image */}
-          <div className="w-100 h-150 relative left-0 bottom-8">
+          <div className="w-90 h-130 relative left-10 bottom-0 z-20">
             <img
               src="../Avatar_tilted.png"
               alt="VR Developer"
-              className="w-full h-full object-contain brightness-120 contrast-110"
+              className="w-full h-full object-contain brightness-150 contrast-160"
             />
           </div>
         </div>

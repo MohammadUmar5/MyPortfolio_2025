@@ -34,12 +34,12 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <div className="pt-24">
+      <div className="pt-15">
         {" "}
         {/* Added padding-top to account for fixed navbar */}
-        <div className="border border-white flex items-center justify-between px-8 lg:px-16 py-12 h-full max-w-7xl">
+        <div className="flex items-center justify-between px-8 lg:px-16 py-12 h-full max-w-7xl">
           {/* Left Side - Text */}
-          <div className=" ml-1 mt-[-280px] z-30">
+          <div className=" ml-1 mt-0 z-30">
             <h1
               className="text-4xl text-white lg:text-7xl font-bold leading-none"
               style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
@@ -54,7 +54,7 @@ function App() {
               Building scalable APIs, managing cloud infrastructure &
               architecting backend systems.
             </h3>
-            <div className="">
+            <div className="mt-20">
               <SocialIcon
                 url="https://github.com/MohammadUmar5 "
                 bgColor="transparent"

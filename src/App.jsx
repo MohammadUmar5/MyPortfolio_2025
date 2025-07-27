@@ -6,13 +6,14 @@ function App() {
   const [activeNav, setActiveNav] = useState("home");
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white min-h-screen relative grid-background">
+      
       <style>
         {`@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');`}
       </style>
 
       {/* True Glassmorphic Navbar - Transparent until content is behind it */}
-      <nav className="fixed top-0 left-0 right-0 z-50 h-15 w-full backdrop-blur-md bg-black/0 hover:bg-black/5 transition-all duration-300 py-6">
+      <nav className="fixed top-0 left-0 right-0 z-50 h-20 w-full backdrop-blur-md bg-black/10 transition-all duration-300 py-6">
         <div className="flex justify-center gap-10 items-center h-full">
           {["home", "projects", "about", "contact"].map((item) => (
             <button
@@ -21,7 +22,7 @@ function App() {
               className={`capitalize text-lg font-medium transition-all duration-300 hover:scale-105 px-4 py-2 relative ${
                 activeNav === item
                   ? "text-white"
-                  : "text-white hover:font-bold "
+                  : "text-white hover:font-bold"
               }`}
             >
               {item}
@@ -34,19 +35,17 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <div className="pt-15">
-        {" "}
-        {/* Added padding-top to account for fixed navbar */}
-        <div className="flex items-center justify-between px-8 lg:px-16 py-12 h-full max-w-7xl">
+      <div className="pt-24 relative z-10">
+        <div className="flex items-center justify-between px-8 lg:px-16 py-12 h-full max-w-7xl mx-auto">
           {/* Left Side - Text */}
-          <div className=" ml-1 mt-0 z-30">
+          <div className="ml-1 mt-0 z-30">
             <h1
               className="text-4xl text-white lg:text-7xl font-bold leading-none"
               style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
             >
               Hello I am Umar, a
               <br />
-              <span className="bg-gradient-to-r from-pink-500 via-yellow-500 to-blue-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">
                 backend developer
               </span>
             </h1>
@@ -56,7 +55,7 @@ function App() {
             </h3>
             <div className="mt-20">
               <SocialIcon
-                url="https://github.com/MohammadUmar5 "
+                url="https://github.com/MohammadUmar5"
                 bgColor="transparent"
                 className="mr-4"
                 style={{ height: "100px", width: "100px" }}
@@ -71,10 +70,10 @@ function App() {
                 url="https://x.com/MohdUmar887"
                 bgColor="transparent"
                 className="mr-4"
-                style={{ height: "100px", width: "100px" }}
+                style={{ height: "90px", width: "90px" }}
               />
               <SocialIcon
-                url="mailto:yourname@example.com"
+                url="mailto:umar.warsi887@gmail.com"
                 bgColor="transparent"
                 className="mr-4"
                 style={{ height: "100px", width: "100px" }}
@@ -83,9 +82,9 @@ function App() {
           </div>
 
           {/* Right Side - Image */}
-          <div className="w-90 h-130 relative left-10 bottom-0 z-20">
+          <div className="w-100 h-116 relative z-20">
             <img
-              src="../Avatar_tilted.png"
+              src="/Avatar_tilted.png"
               alt="VR Developer"
               className="w-full h-full object-contain brightness-150 contrast-160"
             />

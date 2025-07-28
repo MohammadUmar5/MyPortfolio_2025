@@ -1,2 +1,2 @@
 # My Portfolio 
-my latest portfolio in progress.
+My latest portfolio in progress.
